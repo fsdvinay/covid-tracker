@@ -1,0 +1,211 @@
+body{
+    background-color: #fff;
+}
+#container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    justify-content: space-between;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+}
+#leftContainer{
+    /* border: 1px solid black; */
+}
+.liveFiguresElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stateName{
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+.stateName .containerHeading1{
+    color: rgba(0, 0, 0, 0.801);
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+.containerHeading2.state{
+    font-size: 14px;
+}
+.stateName .containerHeading2{
+    color: rgba(0, 0, 0, 0.658);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.stateName .containerHeading2 span{
+    color: hsl(143, 100%, 39%);
+    font-size: 15px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.liveFiguresElement{
+    width: 23%;
+    padding: 5px 0;
+    background-color: #fff;
+}
+.liveFiguresElementTitle{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.541);
+}
+.totalFigure{
+    font-size: 22px;
+    font-weight: bold;
+}
+.confirmedElement{
+    grid-area: c;
+    /* background-color: #ff738a; */
+    box-shadow: 0 3px 3px #ff738a34;
+}
+.totalConfirmed{
+    color: crimson;
+}
+.activeElement{
+    grid-area: a;
+    /* background-color: #67adff; */
+    box-shadow: 0 3px 3px #67aeff33;
+
+}
+.totalActive{
+    color: rgb(20, 157, 220);
+}
+.recoveredElement{
+    grid-area: r;
+    /* background-color: #7ce385; */
+    box-shadow: 0 3px 3px #7ce38560;
+
+}
+.totalRecovered{
+    color: rgb(20, 220, 80);
+}
+.deceasedElement{
+    display: d;
+    /* background-color: #ffc26c; */
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.116);
+}
+.totalDeceased{
+    color: rgba(0, 0, 0, 0.685);
+}
+
+table{
+    margin-top: 30px;
+    width: 100%;
+}
+table .head{
+    background-color: rgba(0, 0, 0, 0.062);
+}
+tr td i{
+    background-color: rgba(0, 0, 0, 0.048);
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.377);
+}
+.head td{
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+table tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.030);
+}
+
+
+table td{
+    color: rgba(0, 0, 0, 0.849);
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tableNumber{
+    text-align: center;
+}
+#rightContainer{
+    /* border: 1px solid black; */
+    /* box-shadow: 0 5px 5px #ff738a34; */
+}
+path{
+    stroke-width: 1px;
+    stroke: rgba(220, 20, 60, 0.473);
+    fill: white;
+}
+.stateMore{
+    display: flex;
+    justify-content: space-between;
+}
+.explain1{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(1, 161, 14, 0.596);
+    margin-bottom: 5px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.lastUpdated{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    color: rgba(1, 161, 14, 0.856);
+}
+
+#svgContainer{
+    display: flex;
+    justify-content: center;
+}
+svg{
+    width: 80%;
+    margin: auto;
+}
+@media only screen and (max-width:1100px){
+    #container{
+        grid-template-columns: 47%;
+        justify-content: center;
+    }
+    #rightContainer{
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.123);
+    }
+}
+
+@media only screen and (max-width:800px){
+    #container{
+        grid-template-columns: 90%;
+    }
+}
+@media only screen and (max-width:350px){
+    #container{
+        grid-template-columns: 99%;
+    }
+    .stateName{
+        padding: 5px;
+    }
+    .stateName .containerHeading2{
+        font-size: 17px;
+        color: crimson;
+        height: 35px;
+    }
+    p.explain1{
+        font-size: 12px;
+    }
+    .liveFiguresElementTitle{
+        font-size: 10px;
+    }
+    .totalFigure{
+        font-size: 18px;
+    }
+    table td{
+        padding: 8px 2px;
+    }
+}

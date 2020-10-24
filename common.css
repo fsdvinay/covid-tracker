@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	font-family: 'roboto', sans-serif;
+	background-color: #fff;
+}
+nav{
+	background-color: white;
+	box-shadow: 0 5px 10px rgba(3, 0, 45, 0.075);
+}
+#navContainer{
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px 0;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#navContainer h1 a{
+	font-size: 18px;
+    color: crimson;
+    text-decoration: none;
+}
+.sideNav{
+	width: 250px;
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	left: -250px;
+	top: 0;
+	background-color: white;
+	height: 100%;
+	box-shadow: 5px 0px 10px rgba(3, 0, 45, 0.075);
+	transition-property: left;
+	transition-duration: 0.3s;
+}
+.openSideNav{
+	left: 0;
+}
+.sideNav li{
+	border-bottom: 0.5px solid rgba(3, 0, 45, 0.2);
+	list-style: none;
+}
+.sideNav li a{
+	color: 	rgba(3, 0, 45, 0.589);
+	display: block;
+	padding: 17px 20px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.donate{
+	background-color: crimson;
+	border: none;
+	margin-top: auto;
+	text-align: center;
+}
+.sideNav > li.donate > a{
+	color: white;
+	font-size: 20px;
+}
+@media only screen and (max-width:600px){
+    #navContainer{
+        padding: 15px 0px;
+	}
+	#navContainer h1 a{
+		font-size: 17px;
+		margin-left: 5px;
+	}
+	.fa-bars{
+		padding: 0 5px;
+	}
+}
+
+@media (max-width: 1000px){
+	#navContainer h1 a{
+		/*margin-left: 10px;*/
+	}
+}

@@ -1,0 +1,19 @@
+.page{
+    max-width: 1000px;
+    margin: auto;
+    background-color:white;
+    margin-top: 30px;
+    padding: 40px 80px 60px 80px;
+    box-sizing: border-box;
+}
+h2{
+    margin-bottom: 20px;
+    color: #03002D;
+}
+
+@media only screen and (max-width: 700px){
+	.page{
+		padding: 15px 20px;
+		margin-top: 10px;
+	}
+}
